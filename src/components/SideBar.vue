@@ -3,53 +3,97 @@
   <div class="reactive flex min-h-screen space-y-6">
     <!-- SideBar -->
     <div
-      class="bg-cyan-600 text-cyan-100 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out md:relative md:translate-x-0"
+      class="bg-white border text-cyan-100 w-80 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out md:relative md:translate-x-0"
       :class="{ 'relative translate-x-0': showSidebar }">
-      <a href="" class="flex items-center space-x-2 px-4 py-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-10 h-10">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-        </svg>
-        <span class="text-2x font-extraBold text-white group-hover:text-cyan-300">Header</span>
+      <a href="" class="flex justify-center flex-col items-center space-x-2 px-4 py-4">
+        <app-logo />
+        <span class="text-2x font-extraBold text-primary">Ambition Hire</span>
+        <span class="text-2x font-extraBold text-black text-xl mt-4 font-medium">Anmol Duggal</span>
+        <span class="text-disabled text-sm">Co-Founder</span>
+        <button
+          class="mt-2 text-primary bg-white border-solid border-2 border-primary rounded-4xl px-1 py-2 w-64 flex justify-center items-center gap-2">
+          <span>View Profile</span>
+          <arrow-right-svg />
+        </button>
       </a>
+      <hr class="text-outline h-2">
       <nav>
         <a href=""
-          class="group flex items-center space-x-2 py-3 px-4 hover:bg-cyan-800 rounded hover:text-cyan-300 transition-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-          </svg>
-          <span class="text-2x font-extraBold text-white group-hover:text-cyan-300">Menu1</span>
+          class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+          <insight-svg />
+          <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Insight</span>
         </a>
-        <a href=""
-          class="group flex items-center space-x-2 py-3 px-4 hover:bg-cyan-800 rounded hover:text-cyan-300 transition-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-          </svg>
-          <span class="text-2x font-extraBold text-white group-hover:text-cyan-300">Menu2</span>
-        </a>
-        <a href=""
-          class="group flex items-center space-x-2 py-3 px-4 hover:bg-cyan-800 rounded hover:text-cyan-300 transition-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-          </svg>
-          <span class="text-2x font-extraBold text-white group-hover:text-cyan-300">Menu3</span>
+        <div class="flex gap-2 flex-col">
+          <span class="flex text-black mt-4 ml-4">CLIENT </span>
+
+
           <a href=""
-            class="group flex items-center space-x-2 py-3 px-4 hover:bg-cyan-800 rounded hover:text-cyan-300 transition-200">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-            </svg>
-            <span class="text-2x font-extraBold text-white group-hover:text-cyan-300">Menu4</span>
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <query-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Queries</span>
           </a>
-        </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <user-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Trial Signups</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <user-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Data</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <query-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Invoice Generation</span>
+          </a>
+        </div>
+        <div class="flex gap-2 flex-col">
+          <span class="flex text-black mt-4 ml-4">ORGANISATION </span>
+
+
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <question-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Question Bank</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <assets-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Assets</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <assets-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">FAQS</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <assets-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Access Management</span>
+          </a>
+          <a href=""
+            class="group flex items-center space-x-2  hover:text-white transition-200 text-black bg-white hover:bg-button -solid border-2 border-outline hover:border-primary rounded-4xl px-4 py-2 w-64 mx-auto my-0">
+
+            <question-svg />
+            <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Access Management</span>
+          </a>
+        </div>
+        <div class="mt-8 mb-8">
+          <button
+            class="group flex justify-center items-center space-x-2 rounded-4xl px-4 py-2 w-64 mx-auto my-0 transition-200 bg-red text-red">
+            <log-out-svg />
+            <span class="text-2x font-extraBold text-red ">Logout</span>
+          </button>
+        </div>
       </nav>
     </div>
     <!-- Main Content -->
@@ -70,6 +114,15 @@
 </template>
 <script>
 import { ref } from 'vue'
+import AppLogo from '@/SVG/AppLogo.vue';
+import InsightSvg from '@/SVG/InsightSvg.vue';
+import QuerySvg from '@/SVG/QuerySvg.vue';
+import UserSvg from '@/SVG/UserSvg.vue';
+import QuestionSvg from '@/SVG/QuestionSvg.vue';
+import AssetsSvg from '@/SVG/AssetsSvg.vue';
+import ArrowRightSvg from '@/SVG/ArrowRightSvg.vue';
+import LogOutSvg from '@/SVG/LogOutSvg.vue';
+
 export default {
   name: 'SideBar',
   setup() {
@@ -77,6 +130,16 @@ export default {
     return {
       showSidebar
     }
+  },
+  components: {
+    AppLogo,
+    InsightSvg,
+    QuerySvg,
+    UserSvg,
+    QuestionSvg,
+    AssetsSvg,
+    ArrowRightSvg,
+    LogOutSvg
   }
 }
 </script>
