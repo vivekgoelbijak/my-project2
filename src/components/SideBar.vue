@@ -24,7 +24,7 @@
           <span class="text-2x font-extraBold text-black  group-hover:text-white  font-medium">Insight</span>
         </a>
 
-        <div class="flex gap-2 flex-col" v-for="(items, key) of menus">
+        <div class="flex gap-2 flex-col" v-for="(items, key) of menus" :key="key">
 
           <span class="flex text-black mt-4 ml-4">{{ key }} </span>
 

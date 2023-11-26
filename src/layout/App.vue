@@ -6,7 +6,7 @@
     <div class="flex-1">
       <!-- Header -->
       <div
-        class="bg-white shadow px-2 py-4 transform -translate-x-0 transition duration-200 ease-in-out md:translate-x-full">
+        class="bg-white shadow px-2 py-4 transform -translate-x-0 transition duration-200 ease-in-out lg:hidden md:block">
         <button @click="showSidebar = !showSidebar" class="text-cyan-600 font-extrabold">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6">

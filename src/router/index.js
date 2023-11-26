@@ -36,7 +36,9 @@ const router = createRouter({
       path: '/data',
       name: 'dataPage',
       component: AppVue,
-      children: [{ path: '/data', name: 'data', component: () => import('../views/AboutView.vue') }]
+      children: [
+        { path: '/data', name: 'data', component: () => import('../views/Data/index.vue') }
+      ]
     },
     {
       path: '/invoice-generation',
